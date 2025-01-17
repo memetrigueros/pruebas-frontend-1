@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeros 10 Números Primos</title>
+</head>
+
+<body>
+
+    <h1>Primeros 10 Números Primos</h1>
+    <div id="resultado"></div>
+
+    <script>
+        function isPrime(num) {
+            if (num <= 1) return false;
+            for (let i = 2; i < num; i++) {
+                if (num % i === 0) return false;
+            }
+            return true;
+        }
+
+        function first10Primes() {
+            let primes = [];
+            let num = 2;
+
+            while (primes.length < 10) {
+                if (isPrime(num)) {
+                    primes.push(num);
+                }
+                num++;
+            }
+
+            return primes;
+        }
+
+
+        document.getElementById("resultado").innerHTML = first10Primes().join(", ");
+    </script>
+
+</body>
+
+</html>
