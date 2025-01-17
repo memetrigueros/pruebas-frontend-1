@@ -1,4 +1,4 @@
-# Un programa que indique si la cadena ingresada es un palíndromo
+# Un programa que imprima los primeros 10 números primos
 
 ## Instrucciones para ejecutar el proyecto localmente
 
